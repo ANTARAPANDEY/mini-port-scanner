@@ -28,13 +28,16 @@ python scanner.py scanme.nmap.org -s 20 -e 100
 ```
 --------------------------------------------------
 Target : 127.0.0.1 (127.0.0.1)
-Ports  : 1-9000
+Ports  : 1-1024
 Started: 2026-10-28 18:30:00
 --------------------------------------------------
 PORT      STATE     SERVICE
-8000      open      unknown
+135       open      epmap
+445       open      microsoft-ds
+903       open      unknown
+913       open      unknown
 --------------------------------------------------
-Scan complete: 1 open port(s) out of 9000 scanned.
+Scan complete: 4 open port(s) out of 1024 scanned.
 ```
 
 ## How it works
